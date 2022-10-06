@@ -1,0 +1,19 @@
+version: '3'
+services:
+  db:
+    container_name: admin-angular
+    image: postgres:14.5
+    restart: always
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password123
+    volumes:
+      - './db/initdb.d:/docker-entrypoint-initdb.d'
+    ports:
+      - '5432:5432'
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080

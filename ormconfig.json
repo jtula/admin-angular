@@ -1,0 +1,15 @@
+{
+  "name": "development",
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "admin",
+  "password": "password123",
+  "database": "admin-angular",
+  "synchronize": true,
+  "logging": true,
+  "entities": ["dist/api/**/*.entity.js"],
+  "cli": {
+    "entitiesDir": "apps/api/app/src"
+  }
+}

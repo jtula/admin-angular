@@ -15,7 +15,13 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@admin-angular/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@admin-angular/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@admin-angular/dashboard/core": ["libs/dashboard/core/src/index.ts"],
+      "@admin-angular/dashboard/projects": [
+        "libs/dashboard/projects/src/index.ts"
+      ],
+      "@admin-angular/dashboard/ui": ["libs/dashboard/ui/src/index.ts"],
+      "@admin-angular/interfaces": ["libs/interfaces/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
