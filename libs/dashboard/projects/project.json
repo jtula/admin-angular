@@ -1,0 +1,27 @@
+{
+  "name": "dashboard-projects",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/dashboard/projects/src",
+  "prefix": "admin-angular",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/dashboard/projects"],
+      "options": {
+        "jestConfig": "libs/dashboard/projects/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/dashboard/projects/**/*.ts",
+          "libs/dashboard/projects/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
